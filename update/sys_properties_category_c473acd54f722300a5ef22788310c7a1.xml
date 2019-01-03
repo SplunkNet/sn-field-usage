@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category">
+    <sys_properties_category action="INSERT_OR_UPDATE">
+        <name>Field Usage</name>
+        <sys_class_name>sys_properties_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-03 11:16:12</sys_created_on>
+        <sys_id>c473acd54f722300a5ef22788310c7a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Field Usage</sys_name>
+        <sys_package display_value="Field Usage" source="x_12502_fu">c90a88114f322300a5ef22788310c785</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Field Usage">c90a88114f322300a5ef22788310c785</sys_scope>
+        <sys_update_name>sys_properties_category_c473acd54f722300a5ef22788310c7a1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-03 11:16:12</sys_updated_on>
+        <title/>
+    </sys_properties_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=c473acd54f722300a5ef22788310c7a1"/>
+</record_update>

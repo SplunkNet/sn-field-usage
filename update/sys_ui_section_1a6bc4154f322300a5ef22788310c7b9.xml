@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="1a6bc4154f322300a5ef22788310c7b9" sys_domain="global" table="x_12502_fu_field_usage" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>is_active</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-01-03 09:34:18</sys_created_on>
+            <sys_id>152ccc154f322300a5ef22788310c7bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12502_fu_field_usage" sys_domain="global" view="Default view">1a6bc4154f322300a5ef22788310c7b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-01-03 09:34:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>class</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-01-03 09:34:18</sys_created_on>
+            <sys_id>1d2ccc154f322300a5ef22788310c7bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12502_fu_field_usage" sys_domain="global" view="Default view">1a6bc4154f322300a5ef22788310c7b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-01-03 09:34:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fill_count</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-01-03 09:34:18</sys_created_on>
+            <sys_id>9d2ccc154f322300a5ef22788310c7bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12502_fu_field_usage" sys_domain="global" view="Default view">1a6bc4154f322300a5ef22788310c7b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-01-03 09:34:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>field</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-01-03 09:34:18</sys_created_on>
+            <sys_id>112ccc154f322300a5ef22788310c7bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12502_fu_field_usage" sys_domain="global" view="Default view">1a6bc4154f322300a5ef22788310c7b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-01-03 09:34:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>field_label</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-01-03 09:34:18</sys_created_on>
+            <sys_id>912ccc154f322300a5ef22788310c7bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12502_fu_field_usage" sys_domain="global" view="Default view">1a6bc4154f322300a5ef22788310c7b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-01-03 09:34:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fill_rate</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-01-03 09:34:18</sys_created_on>
+            <sys_id>152ccc154f322300a5ef22788310c7bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12502_fu_field_usage" sys_domain="global" view="Default view">1a6bc4154f322300a5ef22788310c7b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-01-03 09:34:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_records_count</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-01-03 09:34:18</sys_created_on>
+            <sys_id>952ccc154f322300a5ef22788310c7bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12502_fu_field_usage" sys_domain="global" view="Default view">1a6bc4154f322300a5ef22788310c7b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-01-03 09:34:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>t</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-01-03 09:43:02</sys_created_on>
+            <sys_id>992e40d54f322300a5ef22788310c79e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12502_fu_field_usage" sys_domain="global" view="Default view">1a6bc4154f322300a5ef22788310c7b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-01-03 09:43:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_12502_fu_field_usage</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-01-03 09:31:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1a6bc4154f322300a5ef22788310c7b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_12502_fu_field_usage</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Field Usage" source="x_12502_fu">c90a88114f322300a5ef22788310c785</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Field Usage">c90a88114f322300a5ef22788310c785</sys_scope>
+            <sys_update_name>sys_ui_section_1a6bc4154f322300a5ef22788310c7b9</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-01-03 09:31:05</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

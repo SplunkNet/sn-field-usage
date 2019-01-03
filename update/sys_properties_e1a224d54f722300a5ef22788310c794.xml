@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>List of classes to collect field usage statistics on&lt;/br&gt;&#13;
+&lt;div style="font-weight:bold"&gt;field_usage.class_list&lt;/div&gt;&lt;/br&gt;&#13;
+Default: blank.&lt;/br&gt;&#13;
+Comma-separated list.&lt;/br&gt;&#13;
+Use * to loop through current CMDB structure.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_12502_fu.field_usage.class_list</name>
+        <read_roles/>
+        <suffix>field_usage.class_list</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-03 11:13:30</sys_created_on>
+        <sys_id>e1a224d54f722300a5ef22788310c794</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_12502_fu.field_usage.class_list</sys_name>
+        <sys_package display_value="Field Usage" source="x_12502_fu">c90a88114f322300a5ef22788310c785</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Field Usage">c90a88114f322300a5ef22788310c785</sys_scope>
+        <sys_update_name>sys_properties_e1a224d54f722300a5ef22788310c794</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-03 12:11:26</sys_updated_on>
+        <type>string</type>
+        <value>*</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=e1a224d54f722300a5ef22788310c794"/>
+</record_update>

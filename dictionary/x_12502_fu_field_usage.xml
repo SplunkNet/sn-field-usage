@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Field Usage" max_length="40" name="x_12502_fu_field_usage" type="collection">
+        <element attributes="base_start=true" label="Class" max_length="80" name="class" type="table_name"/>
+        <element label="Field" max_length="80" name="field" type="field_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Field label" max_length="100" name="field_label" type="string"/>
+        <element label="Fill count" max_length="40" name="fill_count" type="integer"/>
+        <element label="Fill rate" max_length="15" name="fill_rate" type="percent_complete"/>
+        <element label="Is Active" max_length="40" name="is_active" type="boolean"/>
+        <element label="Total records count" max_length="40" name="total_records_count" type="integer"/>
+    </element>
+</database>

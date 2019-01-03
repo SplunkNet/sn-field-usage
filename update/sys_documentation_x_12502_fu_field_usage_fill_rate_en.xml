@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="fill_rate" label="Fill rate" language="en" table="x_12502_fu_field_usage">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>fill_rate</element>
+            <help/>
+            <hint/>
+            <label>Fill rate</label>
+            <language>en</language>
+            <name>x_12502_fu_field_usage</name>
+            <plural>Fill rates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-01-03 09:34:17</sys_created_on>
+            <sys_id>952ccc154f322300a5ef22788310c79e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Fill rate</sys_name>
+            <sys_package display_value="Field Usage" source="x_12502_fu">c90a88114f322300a5ef22788310c785</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Field Usage">c90a88114f322300a5ef22788310c785</sys_scope>
+            <sys_update_name>sys_documentation_x_12502_fu_field_usage_fill_rate_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-01-03 09:34:17</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_12502_fu.FieldUsage</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>FieldUsage</name>
+        <script><![CDATA[var FieldUsage = Class.create();
+FieldUsage.prototype = {
+	
+	FIELD_USAGE_TABLE: 'x_12502_fu_field_usage',
+	ANALYSIS_METHOD: 'x_12502_fu.field_usage.analysis_method',
+	CLASS_LIST: 'x_12502_fu.field_usage.class_list',
+	
+    /**
+     * 
+     * @param {boolean} isScheduledRun - state if it is a scheduled (reoccuring) event
+     */
+    initialize: function(isScheduledRun) {
+        this.isScheduledRun = isScheduledRun;
+		this.analysisMethod = gs.getProperty(this.ANALYSIS_METHOD, "per class");
+		this.classList = gs.getProperty(this.CLASS_LIST, '').split(',');
+		
+		// if * - loop through current cmdb structure
+		if(this.classList == "*") {
+			this.classList = this.collectClasses();
+		}
+    },
+	
+	/**
+	 * Collect classes from current CMDB structure
+	 *
+	 */
+	collectClasses: function() {
+		var ga = new GlideAggregate('cmdb_ci');
+		ga.groupBy('sys_class_name');
+		ga.query();
+		
+		var list = [];
+		while(ga.next()) {
+			list.push(ga.getValue('sys_class_name'));
+		}
+		return list;
+	},
+
+    /**
+     * 
+     * @param {Array} classList 
+     */
+    analyze: function(classList) {
+        if(this.isScheduledRun) {
+            this.dropRecords();
+        }
+
+        if(classList) {
+            this.classList = classList;
+        }
+
+        this.classList.forEach(function(e) {
+            this.analyzeTable(e);
+        }, this);
+    },
+
+    /**
+     * 
+     * @param {string} table - table name 
+     * @param {object} field - object, constructed by getTableFields() method 
+     * @param {number} total - total number of records in the table 
+     */
+    create: function(table, field, total) {
+        var n = this.getUsageCount(table, field.name, "per class");        
+        var label = this.getLabel(table, field.name);
+
+        var g = new GlideRecord(this.FIELD_USAGE_TABLE);
+        g.initialize();
+        g.setValue('class', table);
+        g.field = field.name;
+        g.field_label = label;
+        g.is_active = field.active;
+        g.total_records_count = total;
+        g.fill_count = n;
+        g.fill_rate = n / total * 100;
+        g.insert();
+    },
+
+    getLabel: function(table, field) {
+        var g = new GlideRecord(table);
+        var label = g.getElement(field).getED().getLabel();
+        return label;
+    },
+
+    getUsageCount: function(table, field, method) {
+        var g = new GlideAggregate(table);
+        if(method == "per class") {
+            g.addQuery('sys_class_name', table);
+        }
+        g.addNotNullQuery(field);
+        g.addAggregate('COUNT');
+
+        g.query();
+
+        g.next();
+
+        return g.getAggregate('COUNT');
+    },
+
+    analyzeTable: function(table) {
+        if(!this.isScheduledRun) {
+            this.deleteRecords(table);
+        }
+		
+        var count = this.getRecordsCount(table, 'per class');
+        var fields = this.getTableFields(table);
+        fields.forEach(function(e) {
+            this.create(table, e, count);
+        }, this);
+    },
+
+    dropRecords: function() {
+        var g = new GlideRecord(this.FIELD_USAGE_TABLE);
+		g.deleteMultiple();
+    },
+
+    deleteRecords: function(table) {
+        var g = new GlideRecord(this.FIELD_USAGE_TABLE);
+        g.addQuery('class', table);
+        g.deleteMutliple();
+    },
+    
+    getRecordsCount: function(table, method) {
+        var ga = new GlideAggregate(table);
+        if(method == "per class") {
+            ga.addQuery('sys_class_name', table);
+        }
+        ga.addAggregate('COUNT');
+        ga.query();
+        ga.next();
+        return ga.getAggregate('COUNT');
+    },
+
+    /**
+     * 
+     * @param {string} table - table name
+     * @return {object} - object representing field attributes: name, active. 
+     */
+    getTableFields: function(table) {
+        var fields = new GlideRecord('sys_dictionary');
+        fields.addQuery('name', table);
+        fields.orderBy('element');
+        fields.query();
+
+        var fieldList = [];
+
+        while(fields.next()) {
+            var name = fields.getValue('element');
+            var active = fields.getValue('active');
+            var isSystemField = !name || name.indexOf("sys_") == 0;
+            if(name && !isSystemField) {
+                fieldList.push({
+                    name: name,
+                    active: active
+                });
+            }   
+        }
+        return fieldList;
+    },
+
+
+    type: 'FieldUsage'
+};
+
+/*
+
+var u = new FieldUsage();
+u.analyzeTable('cmdb_ci_appl');
+
+*/]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-03 11:01:25</sys_created_on>
+        <sys_id>783e54914f722300a5ef22788310c748</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>FieldUsage</sys_name>
+        <sys_package display_value="Field Usage" source="x_12502_fu">c90a88114f322300a5ef22788310c785</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Field Usage">c90a88114f322300a5ef22788310c785</sys_scope>
+        <sys_update_name>sys_script_include_783e54914f722300a5ef22788310c748</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-03 12:23:28</sys_updated_on>
+    </sys_script_include>
+</record_update>
